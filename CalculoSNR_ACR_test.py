@@ -7,8 +7,6 @@
 # It reads a image file, extracts the pixel data, and computes the SNR based on the mean signal intensity and the standard deviation of the noise.
 # The script also includes functionality to visualize the image and display the calculated SNR.
 
-import nibabel
-import os
 import argparse
 import pydicom
 import nibabel as nib
@@ -17,7 +15,6 @@ import matplotlib.pyplot as plt
 
 
 def compute_snr(dataROIsignal, dataROInoise1, dataROInoise2):
-    
     
     mean_signal = np.mean(dataROIsignal)
     std_noise = np.sqrt(np.mean((np.std(dataROInoise1, ddof=1))**2 + (np.std(dataROInoise2, ddof=1))**2))
