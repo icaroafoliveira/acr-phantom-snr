@@ -6,7 +6,9 @@ the other two are noise related ROIs, one at the top of the image, and the other
 
 usage: 
 
-```python CalculoSNR_ACR_test.py filepath
+```
+python CalculoSNR_ACR_test.py filepath
+
 ```
 The three ROIs and their mean and standard deviation are depicted in the figure below.
 ![Phantom ACR](https://github.com/icaroafoliveira/acr-phantom-snr/blob/main/ACR_phantomROIs.png)
